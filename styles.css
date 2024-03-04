@@ -47,6 +47,30 @@
     flex-shrink: 1;
 }
 
+/* media queries for header part*/
+
+/* mobile devices */
+@media (max-width: 768px) {
+    #body {
+        width: 100vw;
+        margin: 0 0;
+    }
+
+    #header {
+        flex-direction: column;
+    }
+
+    .logo-img {
+        width: 160px;
+        height: auto;
+        flex-shrink: 0;
+    }
+
+    .header-entries {
+        font-size: 12px;
+    }
+}
+
 .nav-link {
     border: 1px solid #000;
     background: var(--theme-normal);
@@ -88,7 +112,6 @@
 
     /* Let the components in main-body automatically wrap the text. */
     min-width: 0;
-    word-break: break-all;
 }
 
 #main-body .media-name, .more-link-text {
@@ -105,10 +128,12 @@
 /* sideboxes */
 .sideboxes {
     width: 32.2vw;
+    min-width: 405px;
     background-color: var(--theme-light);
 
     display: flex;
     flex-direction: column;
+    word-break: break-all;
 }
 
 .sidebox {
@@ -376,6 +401,109 @@
     width: 300px;
     display: block;
 }
+
+/* media queries for main part*/
+
+/* tablet and mobile devices */
+@media (max-width: 1024px) {
+    #main-body {
+        flex-direction: column;
+    }
+
+    .sideboxes, .intros {
+        width: 90vw;
+        min-width: 0;
+    }
+
+    #sidebox-contact .contact {
+        align-items: center;
+    }
+
+    #sidebox-hours .datepicker {
+        justify-content: flex-start;
+    }
+}
+
+/* mobile devices */
+@media (max-width: 768px) {
+    #main-body {
+        width: 100vw;
+    }
+
+    .sideboxes, .intros {
+        width: 100vw;
+    }
+
+    .section-main {
+        flex-direction: column;
+        justify-content: center;
+        justify-self: stretch;
+        align-items: stretch;
+    }
+
+    #sidebox-contact .contact {
+        width: 100%;
+    }
+    #sidebox-contact .media {
+        width: 100%;
+        align-items: center;
+    }
+
+    #sidebox-address .address-text {
+        width: 100%;
+    }
+    #sidebox-address .address-map {
+        width: 100%;
+        height: auto;
+        align-items: center;
+    }
+    #sidebox-address .address-map-img {
+        max-width: 300px;
+        height: auto;
+    }
+
+    #sidebox-hours .section-main {
+        gap: 20px;
+    }
+
+    #sidebox-hours .hours-text {
+        width: 100%;
+        align-items: center;
+    }
+    #sidebox-hours .hours-calendar {
+        width: 100%;
+        align-items: center;
+    }
+
+    #sidebox-hours .datepicker {
+        justify-content: center;
+    }
+
+    .section-title {
+        font-size: 22px;
+    }
+
+    .intro-banner .intro-title {
+        font-size: 22px;
+    }
+
+    #intro-weightloss {
+        flex-direction: column;
+    }
+
+    #intro-skincare, #intro-more {
+        flex-direction: column-reverse;
+    }
+
+    .intro-with-pic .intro-text {
+        width: 100%;
+    }
+
+    .intro-with-pic .intro-img {
+        width: 100%;
+    }
+}
+
 /* main part end */
 
 /* footer part begin */
@@ -440,4 +568,33 @@
     color: #76D6FF;
     text-decoration: underline;
 }
+
+
+/* media queries for footer part*/
+
+/* tablet and mobile devices */
+@media (max-width: 1024px) {
+    .footer{
+        flex-direction: column;
+    }
+}
+
+/* mobile devices */
+@media (max-width: 768px) {
+    .footer {
+        margin: 0 0;
+    }
+    .footer .footer-mains {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 300px) {
+    .footer .footer-main {
+        display: flex;
+        flex-direction: column;
+        width: 80vw;
+    }
+}
+
 /* footer part end */
