@@ -130,12 +130,18 @@
     flex-direction: column;
     justify-content: center;
     width: 45%;
+    font-size: 14px;
 }
 
 #sidebox-contact .media {
     flex-shrink: 1;
     flex-direction: column;
     width: 55%;
+    font-size: 14px;
+}
+
+#sidebox-contact .media .media-header {
+    font-size: 18px;
 }
 
 #sidebox-contact .media-link {
@@ -347,6 +353,7 @@
 
 
 .footer {
+    margin: 0 -5vw;
     display: flex;
     flex-direction: row;
     padding: 7px 44px 0px 44px;
@@ -386,6 +393,8 @@
 }
 
 .footer .footer-main {
+    list-style: none;
+
     color: #FFF;
     width: 300px;
 
