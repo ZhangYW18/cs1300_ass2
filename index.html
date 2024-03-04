@@ -14,11 +14,13 @@
   <body id="body">
     <!--header-->
     <header id="header">
+      <!-- logo -->
       <div class="logo">
         <a href="#">
           <img class="logo-img" src="./assets/logo.png" alt="logo of primary walk in clinic">
         </a>
       </div>
+      <!-- header entries -->
       <div class="header-entries">
         <ul class="nav justify-content-center">
           <li><a href="#" class="nav-link">URGENT CARE</a></li>
@@ -34,13 +36,16 @@
       </div>
     </header>
 
-    <!--carousel - Using component from bootstrap framework-->
+    <!-- carousel: Using component from bootstrap framework -->
+    <!-- Reference: https://getbootstrap.com/docs/4.0/components/carousel/  -->
     <div class="carousel slide" data-ride="carousel">
+      <!-- carousel indicators -->
       <ol class="carousel-indicators">
         <li data-target="#" data-slide-to="0" class="active"></li>
         <li data-target="#" data-slide-to="1"></li>
         <li data-target="#" data-slide-to="2"></li>
       </ol>
+      <!-- carousel pictures -->
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img class="d-block w-100" src="./assets/carousel2.jpg" alt="smiling doctors">
@@ -52,6 +57,7 @@
           <img class="d-block w-100" src="./assets/carousel3.jpg" alt="a woman receiving medical aesthetics services">
         </div>
       </div>
+      <!-- control arrows -->
       <a class="carousel-control-prev" href="#" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
@@ -62,17 +68,24 @@
       </a>
     </div>
 
+    <!-- main body of webpage -->
     <main id="main-body">
+
+      <!-- sideboxes -->
       <div class="sideboxes">
-        <!-- sideboxes -->
+
+        <!-- contact sidebox: show the contact information and social media links of the clinic -->
         <article class="sidebox" id="sidebox-contact">
           <h1 class="section-title">Contact & Media</h1>
+
           <div class="section-main">
+            <!-- contact information -->
             <div class="contact">
               <p>&#x1F4DE;  (+1) (401) 123-2345</p>
               <p>&#x1F4E0;  (+1) (401) 234-3456</p>
               <p>&#x1f4e7;  help@primarywalkin.com</p>
             </div>
+            <!-- social media links -->
             <div class="media">
               <div class="media-link">
                 <!--empty icon div is added here to align start of header with the start of paragraphs below-->
@@ -93,16 +106,25 @@
               </div>
             </div>
           </div>
+
         </article>
 
+        <!-- address sidebox: show the address information for the clinic -->
         <article class="sidebox" id="sidebox-address">
           <h1 class="section-title">Address</h1>
+
           <div class="section-main">
+            <!-- show the address in text -->
             <div class="address-text">
               <span class="address-p">684 Warren Ave</span>
               <span class="address-p">East Providence, RI</span>
               <span class="address-p">02914</span>
             </div>
+            <!-- show the address in google maps -->
+            <!--
+              Google maps component requires an API key, which needs application and takes time.
+              Therefore, we use image here instead temporarily.
+             -->
             <div class="address-map">
               <a href="#">
                 <img class="address-map-img" src="./assets/map.png" alt="address of clinic - google map"/>
@@ -111,9 +133,11 @@
           </div>
         </article>
 
+        <!-- hours sidebox: show the opening hours for the clinic -->
         <article class="sidebox" id="sidebox-hours">
           <h1 class="section-title">Hours</h1>
           <div class="section-main">
+            <!-- show hours information according to the date of interactive calendar below -->
             <div class="hours-text">
               <div class="hours-date">
                 <span>25th Feb 2024</span>
@@ -137,6 +161,10 @@
                 </div>
               </div>
             </div>
+            <!--
+              interactive calendar: allows user to pick a specific date.
+              default value is set to 02/25/2024 when webpage is without js code (interactions)
+             -->
             <div class="hours-calendar">
               <!--Using open source component here: https://github.com/uxsolutions/bootstrap-datepicker-->
               <div class="datepicker" data-provide="datepicker-inline" data-date="02/25/2024">
@@ -147,10 +175,10 @@
       </div>
 
 
-      <!-- introduction sections-->
+      <!-- introduction sections: introduces specific services of the clinic: urgent care, skincare, weightloss, more services.  -->
       <div class="intros">
 
-        <!-- urgent care-->
+        <!-- urgent care -->
         <article class="intro" id="intro-urgent-care-text">
           <header class="intro-banner">
             <h1 class="intro-title">Urgent Care</h1>
@@ -235,7 +263,7 @@
 
   <!--footer-->
   <footer class="footer">
-    <!--about section-->
+    <!--about section: shows copyright information and a summary of the clinic -->
     <section class="footer-section">
       <h1 class="footer-title">
         About
@@ -252,7 +280,7 @@
       </div>
     </section>
 
-    <!--page links section-->
+    <!--page links section: shows the links of the website-->
     <section class="footer-section">
       <h1 class="footer-title">
         Page Links

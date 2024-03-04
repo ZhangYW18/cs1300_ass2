@@ -5,7 +5,7 @@
     --theme-normal: #FFB1B1;
     --theme-dark: #FF0205;
     --footer-color: #182F82;
-
+    /* font-weights */
     --font-weight-regular: 400;
     --font-weight-medium: 500;
     --font-weight-bold: 700;
@@ -23,6 +23,7 @@
     background: var(--theme-lightest);
 }
 
+/* header part begin */
 #header {
     display: flex;
     align-items: center;
@@ -31,6 +32,7 @@
     padding: 20px 0px 10px 0px;
 }
 
+/* Do not let logo scale at any time */
 .logo-img {
     width: 260px;
     height: 70px;
@@ -55,7 +57,9 @@
 .nav-link:hover {
     color: #2647F5;
 }
+/* header part end */
 
+/* carousel part begin */
 .carousel {
     flex: 1;
     height: 400px;
@@ -72,16 +76,19 @@
 .carousel .carousel-control-prev, .carousel-control-next{
     filter: invert(100%);
 }
+/* carousel part begin */
 
+/* main part begin */
 #main-body {
     display: flex;
     justify-content: space-between;
     flex: 1;
     width: 90vw;
+    padding: 50px 0px 60px 0px;
+
     /* Let the components in main-body automatically wrap the text. */
     min-width: 0;
     word-break: break-all;
-    padding: 50px 0px 60px 0px;
 }
 
 #main-body .media-name, .more-link-text {
@@ -95,13 +102,13 @@
     text-decoration: underline;
 }
 
+/* sideboxes */
 .sideboxes {
     width: 32.2vw;
     background-color: var(--theme-light);
 
     display: flex;
     flex-direction: column;
-    /*justify-content: space-between;*/
 }
 
 .sidebox {
@@ -133,6 +140,8 @@
     font-weight: var(--font-weight-medium);
     font-size: 16px;
 }
+
+/* sidebox contact */
 
 #sidebox-contact .section-main {
     align-items: center;
@@ -177,6 +186,8 @@
     margin-right: 5px;
 }
 
+/* sidebox address */
+
 #sidebox-address .address-p {
     padding-top: 8px;
     padding-bottom: 8px;
@@ -205,6 +216,8 @@
 #sidebox-address .address-map-img {
     width: 100%;
 }
+
+/* sidebox hours */
 
 #sidebox-hours .hours-text {
     display: flex;
@@ -260,16 +273,13 @@
     align-items: center;
 }
 
+/* ensure calendar is correctly formatted */
 .table-condensed {
     min-width: 250px;
     min-height: 240px;
 }
 
-.datepicker .dow {
-    padding: 0 0;
-}
-
-
+/* intros */
 .intros {
     width: 55.2vw;
     background-color: var(--theme-light);
@@ -312,7 +322,6 @@
     font-weight: var(--font-weight-bold);
     text-decoration: underline;
 }
-
 
 .intro-main {
     flex: 1;
@@ -366,8 +375,9 @@
     width: 300px;
     display: block;
 }
+/* main part end */
 
-
+/* footer part begin */
 .footer {
     margin: 0 -5vw;
     display: flex;
@@ -429,3 +439,4 @@
     color: #76D6FF;
     text-decoration: underline;
 }
+/* footer part end */
