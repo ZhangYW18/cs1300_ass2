@@ -3,12 +3,276 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Primary Walk-in Clinic</title>
-    <link rel="stylesheet" href="styles.css" /> 
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Bootstrap Vue CSS -->
+    <link type="text/css" rel="stylesheet" href="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.min.css"/>
+
   </head>
 
   <!-- page content goes into <body> -->
   <body>
+    <div id="body">
+      <!--header-->
+      <div id="header">
+        <div class="logo">
+          <a href="#">
+            <img class="logo-img" src="./assets/logo.png" alt="logo of primary walk in clinic">
+          </a>
+        </div>
+        <div class="header-entries">
+          <ul class="nav justify-content-center">
+            <li><a href="#" class="nav-link">URGENT CARE</a></li>
+            <li><a href="#" class="nav-link">CLINICIANS</a></li>
+            <li><a href="#" class="nav-link">SERVICES</a></li>
+            <li><a href="#" class="nav-link">WEIGHTLOSS</a></li>
+            <li><a href="#" class="nav-link">COSMETICS+</a></li>
+            <li><a href="#" class="nav-link">FINANCIAL INFO</a></li>
+            <li><a href="#" class="nav-link">MEDICAL EVALUATION</a></li>
+            <li><a href="#" class="nav-link">FORMS</a></li>
+            <li><a href="#" class="nav-link">CONTACT</a></li>
+          </ul>
+        </div>
+      </div>
 
+      <!--carousel-->
+      <div class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="./assets/carousel2.jpg" alt="">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="./assets/carousel1.jpg" alt="">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="./assets/astethic1.jpg" alt="">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+      <div id="main-body">
+        <div class="sideboxes">
+
+          <div class="sidebox" id="sidebox-contact">
+            <div class="section-title">Contact & Media</div>
+            <div class="section-main">
+              <div class="contact" style="font-size: 14px">
+                <p>&#x1F4DE;  (+1) (401) 123-2345</p>
+                <p>&#x1F4E0;  (+1) (401) 234-3456</p>
+                <p>&#x1f4e7;  help@primarywalkin.com</p>
+              </div>
+              <div class="media"  style="font-size: 14px">
+                <div class="media-link">
+                  <div class="media-icon"></div>
+                  <a style="font-size: 18px">Follow Us:</a>
+                </div>
+                <div class="media-link">
+                  <img class="media-icon" src="./assets/icons/fa.png" alt="facebook icon">
+                  <a class="media-name" href="#">Primary Walk in Medical Center</a>
+                </div>
+                <div class="media-link">
+                  <img class="media-icon" src="./assets/icons/ins.png" alt="instagram icon">
+                  <a class="media-name" href="#">@primarywalkinmedicalcenter</a>
+                </div>
+                <div class="media-link">
+                  <img class="media-icon" src="./assets/icons/twi.png" alt="twitter icon">
+                  <a class="media-name" href="#">@primaryhealth</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="sidebox" id="sidebox-address">
+            <div class="section-title">Address</div>
+            <div class="section-main">
+              <div class="address-text">
+                <a class="address-p">684 Warren Ave</a>
+                <a class="address-p">East Providence, RI</a>
+                <a class="address-p">02914</a>
+              </div>
+              <div class="address-map">
+                <a href="#">
+                  <img class="address-map-img" src="./assets/map.png" alt="address of clinic - google map"/>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="sidebox" id="sidebox-hours">
+            <div class="section-title">Hours</div>
+            <div class="section-main">
+              <div class="hours-text">
+                <div class="hours-date">
+                  <a>25th Feb 2024</a>
+                  <a>Sunday</a>
+                </div>
+                <div class="hours-detail">
+                  <div class="hours-item">
+                    <a>Open</a>
+                    <br>
+                    <a class="hours-bold-text">7:00 am</a>
+                  </div>
+                  <div class="hours-item">
+                    <a>Close</a>
+                    <br>
+                    <a class="hours-bold-text">7:00 pm</a>
+                  </div>
+                  <div class="hours-item">
+                    <a>Last Patient Checkin</a>
+                    <br>
+                    <a class="hours-bold-text">6:45 pm</a>
+                  </div>
+                </div>
+              </div>
+              <div class="hours-calendar">
+                <a href="#">
+                  <img class="hours-calendar-img" src="./assets/calendar.png" alt="calendar date selector - select date here, hours will show in the left section"/>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="intros">
+
+          <div class="intro" id="intro-urgent-care-text">
+            <div class="intro-banner">
+              <div class="intro-title">Urgent Care</div>
+              <div class="more-link">
+                <a class="more-link-text" href="#">Learn more...</a>
+              </div>
+            </div>
+
+            <div class="intro-main">
+              <p>We at Primary Walk-In Medical Center want you to choose us to care for your medical needs. We have been serving Rhode Island residents and businesses with high-quality care, without appointment or pretense. Our team of board-certified physicians, nurse practitioners, nurses, and technicians will care for you like a member of our family, the Primary Walk-In Medical Center family. Whether you are ill, injured, or just need routine care, no appointment is ever necessary.
+              </p>
+            </div>
+          </div>
+
+          <div class="intro intro-with-pic" id="intro-skincare">
+            <div class="intro-img">
+              <img id="intro-skincare-img" src="./assets/skincare.jpg" alt="laser skincare at primary walk-in"/>
+            </div>
+
+            <div class="intro-text">
+              <div class="intro-banner">
+                <div class="intro-title">Skincare</div>
+                <div class="more-link">
+                  <a class="more-link-text" href="#">Learn more...</a>
+                </div>
+              </div>
+
+              <div class="intro-main">
+                <p>Primary Laser Skincare is your one stop shop for laser hair removal and skin rejuvenation. We offer a clean, professional environment that caters to clients of both sexes and all ages. We not only offer laser hair removal, but also other forms of laser skin care, including laser skin rejuvenation, laser skin tightening, and teeth whitening.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="intro intro-with-pic" id="intro-weightloss">
+            <div class="intro-text">
+              <div class="intro-banner">
+                <div class="intro-title">Weightloss</div>
+                <div class="more-link">
+                  <a class="more-link-text" href="#">Learn more...</a>
+                </div>
+              </div>
+
+              <div class="intro-main">
+                <p>Primary weight loss program helps you lose weight in a scientific way with personalized diet plans and exercise routines. Join us at Primary Walk-In and start your journey to a healthier you!
+                </p>
+              </div>
+            </div>
+
+            <div class="intro-img">
+              <img id="intro-weightloss-img" src="./assets/weightloss.jpg" alt="a woman enrolled in weightloss program"/>
+            </div>
+          </div>
+
+          <div class="intro intro-with-pic" id="intro-more">
+            <div class="intro-img">
+              <img id="intro-more-img" src="./assets/more.jpg" alt="expert smiling doctor"/>
+            </div>
+
+            <div class="intro-text">
+              <div class="intro-banner">
+                <div class="intro-title">More Services</div>
+                <div class="more-link">
+                  <a class="more-link-text" href="#">Learn more...</a>
+                </div>
+              </div>
+
+              <div class="intro-main">
+                <p>We also offer medical evaluation, physical examination, vaccine service and more services to the public at reasonable price. Come in and experience why we have the finest reputation for prompt, convenient, and most importantly, quality medical care!
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer">
+
+      <div class="footer-section">
+        <div class="footer-title">
+          About
+        </div>
+        <div class="footer-main">
+          <p>
+            At Primary Walk-In, we focus on providing only the best medical care to our patients with a dedicated, professional team at your service.
+          </p>
+          <p>
+            PrimaryWalkInMedical.com
+            <br>
+            &#169; 2024 All Rights Reserved
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-section">
+        <div class="footer-title">
+          Page Links
+        </div>
+        <div class="footer-mains">
+          <div class="footer-main">
+            <a class="footer-link" href="#">Botox in East Providence</a><br>
+            <a class="footer-link" href="#">Laser Hair Removal</a><br>
+            <a class="footer-link" href="#">Laser Facials</a><br>
+            <a class="footer-link" href="#">Laser Skin Firming</a><br>
+            <a class="footer-link" href="#">Pigmented Lesions & Spider Veins</a>
+          </div>
+          <div class="footer-main">
+            <a class="footer-link" href="#">Primary Laser Skincare</a><br>
+            <a class="footer-link" href="#">Microblading</a><br>
+            <a class="footer-link" href="#">Medical Evaluation</a><br>
+            <a class="footer-link" href="#">PRP Facial Rejuvenation</a><br>
+          </div>
+        </div>
+      </div>
+
+    </div>
   </body>
+
+  <!-- Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 </html>
