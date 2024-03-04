@@ -216,16 +216,38 @@
 
 #sidebox-hours .hours-calendar {
     width: 55%;
+    min-width: 250px;
+    min-height: 240px;
     flex-shrink: 1;
     display: flex;
     align-self: stretch;
     justify-content: center;
     align-items: center;
+    /*background: #FFFFFF;*/
 }
 
-#sidebox-hours .hours-calendar-img {
+#sidebox-hours .datepicker {
     width: 100%;
+    min-width: 250px;
+    min-height: 240px;
+    flex-shrink: 1;
+    align-self: stretch;
+    font-weight: 400;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
+
+.table-condensed {
+    min-width: 250px;
+    min-height: 240px;
+}
+
+.datepicker .dow {
+    padding: 0 0;
+}
+
 
 .intros {
     width: 55.2vw;
