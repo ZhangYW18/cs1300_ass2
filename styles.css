@@ -230,12 +230,13 @@
     flex-shrink: 1;
 }
 
-#sidebox-hours .hours-date {
+#sidebox-hours .hours-department {
     display: flex;
     flex-direction: column;
     align-self: stretch;
     justify-content: center;
     align-items: center;
+    flex: 1;
 }
 
 #sidebox-hours .hours-detail {

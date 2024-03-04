@@ -92,6 +92,7 @@
                 <div class="media-icon"></div>
                 <h2 class="media-header">Follow Us:</h2>
               </div>
+              <!-- show accounts on facebook, instagram, twitter -->
               <div class="media-link">
                 <img class="media-icon" src="./assets/icons/fa.png" alt="facebook icon">
                 <a class="media-name" href="#">Primary Walk in Medical Center</a>
@@ -127,7 +128,7 @@
              -->
             <div class="address-map">
               <a href="#">
-                <img class="address-map-img" src="./assets/map.png" alt="address of clinic - google map"/>
+                <img class="address-map-img" src="./assets/google-map.png" alt="address of clinic - google map"/>
               </a>
             </div>
           </div>
@@ -137,12 +138,16 @@
         <article class="sidebox" id="sidebox-hours">
           <h1 class="section-title">Hours</h1>
           <div class="section-main">
-            <!-- show hours information according to the date of interactive calendar below -->
+            <!-- show hours information according to the date of interactive calendar and department chosen -->
             <div class="hours-text">
-              <div class="hours-date">
-                <span>25th Feb 2024</span>
-                <a>Sunday</a>
+              <!-- a select component; it is used to choose department of clinic -->
+              <div class="hours-department">
+                <select class="select" id="hours-department-select">
+                  <option value="dog">Medical Center</option>
+                  <option value="cat">Laser Skincare</option>
+                </select>
               </div>
+              <!-- show detailed hours information -->
               <div class="hours-detail">
                 <div class="hours-item">
                   <span>Open</span>
