@@ -13,7 +13,7 @@
   <!-- page content goes into <body> -->
   <body id="body">
     <!--header-->
-    <div id="header">
+    <header id="header">
       <div class="logo">
         <a href="#">
           <img class="logo-img" src="./assets/logo.png" alt="logo of primary walk in clinic">
@@ -32,9 +32,9 @@
           <li><a href="#" class="nav-link">CONTACT</a></li>
         </ul>
       </div>
-    </div>
+    </header>
 
-    <!--carousel-->
+    <!--carousel - Using component from bootstrap framework-->
     <div class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#" data-slide-to="0" class="active"></li>
@@ -65,8 +65,8 @@
     <main id="main-body">
       <div class="sideboxes">
         <!-- sideboxes -->
-        <section class="sidebox" id="sidebox-contact">
-          <header class="section-title">Contact & Media</header>
+        <article class="sidebox" id="sidebox-contact">
+          <h1 class="section-title">Contact & Media</h1>
           <div class="section-main">
             <div class="contact">
               <p>&#x1F4DE;  (+1) (401) 123-2345</p>
@@ -77,7 +77,7 @@
               <div class="media-link">
                 <!--empty icon div is added here to align start of header with the start of paragraphs below-->
                 <div class="media-icon"></div>
-                <span class="media-header">Follow Us:</span>
+                <h2 class="media-header">Follow Us:</h2>
               </div>
               <div class="media-link">
                 <img class="media-icon" src="./assets/icons/fa.png" alt="facebook icon">
@@ -93,10 +93,10 @@
               </div>
             </div>
           </div>
-        </section>
+        </article>
 
-        <section class="sidebox" id="sidebox-address">
-          <header class="section-title">Address</header>
+        <article class="sidebox" id="sidebox-address">
+          <h1 class="section-title">Address</h1>
           <div class="section-main">
             <div class="address-text">
               <span class="address-p">684 Warren Ave</span>
@@ -109,10 +109,10 @@
               </a>
             </div>
           </div>
-        </section>
+        </article>
 
-        <section class="sidebox" id="sidebox-hours">
-          <header class="section-title">Hours</header>
+        <article class="sidebox" id="sidebox-hours">
+          <h1 class="section-title">Hours</h1>
           <div class="section-main">
             <div class="hours-text">
               <div class="hours-date">
@@ -143,7 +143,7 @@
               </div>
             </div>
           </div>
-        </section>
+        </article>
       </div>
 
 
@@ -151,9 +151,9 @@
       <div class="intros">
 
         <!-- urgent care-->
-        <section class="intro" id="intro-urgent-care-text">
+        <article class="intro" id="intro-urgent-care-text">
           <header class="intro-banner">
-            <div class="intro-title">Urgent Care</div>
+            <h1 class="intro-title">Urgent Care</h1>
             <div class="more-link">
               <a class="more-link-text" href="#">Learn more...</a>
             </div>
@@ -163,17 +163,17 @@
             <p>We at Primary Walk-In Medical Center want you to choose us to care for your medical needs. We have been serving Rhode Island residents and businesses with high-quality care, without appointment or pretense. Our team of board-certified physicians, nurse practitioners, nurses, and technicians will care for you like a member of our family, the Primary Walk-In Medical Center family. Whether you are ill, injured, or just need routine care, no appointment is ever necessary.
             </p>
           </div>
-        </section>
+        </article>
 
         <!-- skincare -->
-        <section class="intro intro-with-pic" id="intro-skincare">
+        <article class="intro intro-with-pic" id="intro-skincare">
           <div class="intro-img">
             <img id="intro-skincare-img" src="./assets/skincare.jpg" alt="laser skincare at primary walk-in"/>
           </div>
 
           <div class="intro-text">
             <header class="intro-banner">
-              <div class="intro-title">Skincare</div>
+              <h1 class="intro-title">Skincare</h1>
               <div class="more-link">
                 <a class="more-link-text" href="#">Learn more...</a>
               </div>
@@ -184,13 +184,13 @@
               </p>
             </div>
           </div>
-        </section>
+        </article>
 
         <!-- weightloss -->
-        <section class="intro intro-with-pic" id="intro-weightloss">
+        <article class="intro intro-with-pic" id="intro-weightloss">
           <div class="intro-text">
             <header class="intro-banner">
-              <div class="intro-title">Weightloss</div>
+              <h1 class="intro-title">Weightloss</h1>
               <div class="more-link">
                 <a class="more-link-text" href="#">Learn more...</a>
               </div>
@@ -205,17 +205,17 @@
           <div class="intro-img">
             <img id="intro-weightloss-img" src="./assets/weightloss.jpg" alt="a woman enrolled in weightloss program"/>
           </div>
-        </section>
+        </article>
 
         <!-- more services -->
-        <section class="intro intro-with-pic" id="intro-more">
+        <article class="intro intro-with-pic" id="intro-more">
           <div class="intro-img">
             <img id="intro-more-img" src="./assets/more.jpg" alt="expert smiling doctor"/>
           </div>
 
           <div class="intro-text">
             <header class="intro-banner">
-              <div class="intro-title">More Services</div>
+              <h1 class="intro-title">More Services</h1>
               <div class="more-link">
                 <a class="more-link-text" href="#">Learn more...</a>
               </div>
@@ -226,7 +226,7 @@
               </p>
             </div>
           </div>
-        </section>
+        </article>
 
       </div>
     </main>
