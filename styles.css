@@ -436,21 +436,9 @@
     position: relative;
 }
 
-.intro-with-pic #intro-skincare-img {
+.intro-with-pic .intro-img-src {
     align-self: stretch;
-    width: 240px;
-    display: block;
-}
-
-.intro-with-pic #intro-weightloss-img {
-    align-self: stretch;
-    width: 300px;
-    display: block;
-}
-
-.intro-with-pic #intro-more-img {
-    align-self: stretch;
-    width: 300px;
+    width: 330px;
     display: block;
 }
 
