@@ -344,6 +344,10 @@
     height: 240px;
 }
 
+.calendar .calendar-caption {
+    display: none;
+}
+
 .calendar .grid {
     height: 30px;
     width: 30px;
@@ -360,7 +364,7 @@
 }
 
 .calendar .prev, .calendar .next {
-    color: var(--footer-color);
+    color: blue;
 }
 
 .calendar .today {
