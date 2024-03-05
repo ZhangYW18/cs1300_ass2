@@ -419,8 +419,21 @@
         align-items: center;
     }
 
+    #sidebox-contact .media {
+        padding-left: 50px;
+    }
+
+    #sidebox-hours .hours-detail {
+        padding-bottom: 30px;
+    }
+
     #sidebox-hours .datepicker {
         justify-content: flex-start;
+    }
+
+    #sidebox-address .address-map-img {
+        max-width: 300px;
+        height: auto;
     }
 }
 
@@ -432,6 +445,19 @@
 
     .sideboxes, .intros {
         width: 100vw;
+    }
+
+    #sidebox-contact .media {
+        padding-left: 0px;
+    }
+
+    #sidebox-address .address-text {
+        padding-bottom: 15px;
+    }
+
+    #sidebox-hours .hours-detail {
+        padding-top: 20px;
+        padding-bottom: 0px;
     }
 
     .section-main {
@@ -456,10 +482,6 @@
         width: 100%;
         height: auto;
         align-items: center;
-    }
-    #sidebox-address .address-map-img {
-        max-width: 300px;
-        height: auto;
     }
 
     #sidebox-hours .section-main {
