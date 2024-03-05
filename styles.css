@@ -48,6 +48,30 @@
     flex-shrink: 1;
 }
 
+/* cosmetics+ dropdown menu */
+.dropdown .cosmetics-dropdown-content {
+    display: none;
+    position: absolute;
+    width: 100%;
+}
+
+.dropdown:hover .cosmetics-dropdown-content {
+    display: block;
+    background: var(--theme-normal);
+    z-index: 100;
+}
+
+.cosmetics-dropdown-content a {
+    display: block;
+    border: 1px solid black;
+    text-align: center;
+    color: #0000FF;
+}
+
+.cosmetics-dropdown-content a:hover {
+    color: purple;
+}
+
 .nav {
     display: flex;
     justify-content: center;
