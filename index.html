@@ -3,11 +3,11 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Primary Walk-in Clinic</title>
-    <link rel="stylesheet" href="styles.css" />
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- Date picker -->
     <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.0/css/bootstrap-datepicker3.standalone.min.css"/>
+    <link rel="stylesheet" href="styles.css" />
   </head>
 
   <!-- page content goes into <body> -->
@@ -162,6 +162,7 @@
             <div class="hours-condition-picker">
             <!-- a select component; it is used to choose department of clinic -->
               <div class="hours-department">
+                <label for="hours-department-select">Clinic Department:</label>
                 <select class="select" id="hours-department-select">
                   <option value="medical">Medical Center</option>
                   <option value="skincare">Laser Skincare</option>
