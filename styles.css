@@ -352,9 +352,10 @@
 }
 
 /* ensure calendar is correctly formatted */
-.table-condensed {
+.datepicker .table-condensed {
     min-width: 250px;
     min-height: 240px;
+    background: var(--theme-lightest);
 }
 
 /* intros */
