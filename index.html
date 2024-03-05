@@ -169,13 +169,87 @@
                 </select>
               </div>
               <!--
-                interactive calendar: allows user to pick a specific date.
-                default value is set to 02/25/2024 when webpage is without js code (interactions)
+                Interactive calendar: allows user to pick a specific date.
+                Default value is set to 02/25/2024.
                -->
               <div class="hours-calendar">
-                <!--Using open source component here: https://github.com/uxsolutions/bootstrap-datepicker-->
-                <div class="datepicker" data-provide="datepicker-inline" data-date="02/25/2024">
-                </div>
+                <table class="calendar">
+                  <caption style="display: none">
+                    Interactive Calendar Date Picker
+                  </caption>
+                  <thead>
+                    <tr>
+                      <th class="grid label" scope="col">&laquo;</th>
+                      <th class="label" scope="col" colspan="5">February 2024</th>
+                      <th class="grid label" scope="col">&raquo;</th>
+                    </tr>
+                    <tr>
+                      <th class="grid" scope="col">Su</th>
+                      <th class="grid" scope="col">Mo</th>
+                      <th class="grid" scope="col">Tu</th>
+                      <th class="grid" scope="col">We</th>
+                      <th class="grid" scope="col">Th</th>
+                      <th class="grid" scope="col">Fr</th>
+                      <th class="grid" scope="col">Sa</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="prev grid">28</td>
+                      <td class="prev grid">29</td>
+                      <td class="prev grid">30</td>
+                      <td class="prev grid">31</td>
+                      <td class="now grid">1</td>
+                      <td class="now grid">2</td>
+                      <td class="now grid">3</td>
+                    </tr>
+                    <tr>
+                      <td class="now grid">4</td>
+                      <td class="now grid">5</td>
+                      <td class="now grid">6</td>
+                      <td class="now grid">7</td>
+                      <td class="now grid">8</td>
+                      <td class="now grid">9</td>
+                      <td class="now grid">10</td>
+                    </tr>
+                    <tr>
+                      <td class="now grid">11</td>
+                      <td class="now grid">12</td>
+                      <td class="now grid">13</td>
+                      <td class="now grid">14</td>
+                      <td class="now grid">15</td>
+                      <td class="now grid">16</td>
+                      <td class="now grid">17</td>
+                    </tr>
+                    <tr>
+                      <td class="now grid">18</td>
+                      <td class="now grid">19</td>
+                      <td class="now grid">20</td>
+                      <td class="now grid">21</td>
+                      <td class="now grid">22</td>
+                      <td class="now grid">23</td>
+                      <td class="now grid">24</td>
+                    </tr>
+                    <tr>
+                      <td class="now grid today">25</td>
+                      <td class="now grid">26</td>
+                      <td class="now grid">27</td>
+                      <td class="now grid">28</td>
+                      <td class="now grid">29</td>
+                      <td class="next grid">1</td>
+                      <td class="next grid">2</td>
+                    </tr>
+                    <tr>
+                      <td class="next grid">3</td>
+                      <td class="next grid">4</td>
+                      <td class="next grid">5</td>
+                      <td class="next grid">6</td>
+                      <td class="next grid">7</td>
+                      <td class="next grid">8</td>
+                      <td class="next grid">9</td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
             </div>
           </div>
@@ -318,5 +392,11 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <!-- Date picker -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.0/js/bootstrap-datepicker.min.js"></script>
+
+  <script>
+    var parentElement = document.querySelector(".datepicker-days .table-condensed thead tr");
+    var thElement = parentElement.querySelector(".datepicker-title");
+    parentElement.removeChild(thElement);
+  </script>
 
 </html>

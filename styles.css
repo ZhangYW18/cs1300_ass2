@@ -334,35 +334,45 @@
     flex-shrink: 1;
     display: flex;
     align-self: stretch;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     /*background: #FFFFFF;*/
 }
 
-#sidebox-hours .datepicker {
-    width: 100%;
-    min-width: 250px;
-    min-height: 240px;
-    flex-shrink: 1;
-    align-self: stretch;
-
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+.calendar {
+    width: 250px;
+    height: 240px;
 }
 
-/* ensure calendar is correctly formatted */
-.datepicker .table-condensed {
-    min-width: 250px;
-    min-height: 240px;
-    /*background: var(--theme-lightest);*/
+.calendar .grid {
+    height: 30px;
+    width: 30px;
+    text-align: center;
 }
 
-.datepicker table tr td.new, .datepicker table tr td.old {
-    color: blue;
+.calendar .label {
+    text-align: center;
 }
 
-/* intros */
+.calendar tbody .grid:hover, .calendar .label:hover {
+    background: var(--theme-lightest);
+    cursor: pointer;
+}
+
+.calendar .prev, .calendar .next {
+    color: var(--footer-color);
+}
+
+.calendar .today {
+    background: var(--footer-color);
+    color: white;
+}
+
+.calendar .today:hover {
+    color: black;
+}
+
+    /* intros */
 .intros {
     width: 55.2vw;
     background-color: var(--theme-light);
@@ -481,10 +491,6 @@
     #sidebox-hours .hours-detail {
         padding-bottom: 30px;
     }
-
-    #sidebox-hours .datepicker {
-        justify-content: flex-start;
-    }
 }
 
 /* mobile devices */
@@ -557,9 +563,6 @@
     #sidebox-hours .hours-calendar {
         width: 100%;
         align-items: center;
-    }
-
-    #sidebox-hours .datepicker {
         justify-content: center;
     }
 
