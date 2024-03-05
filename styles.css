@@ -5,6 +5,7 @@
     --theme-normal: #FFB1B1;
     --theme-dark: #FF0205;
     --footer-color: #182F82;
+
     /* font-weights */
     --font-weight-regular: 400;
     --font-weight-medium: 500;
@@ -47,7 +48,42 @@
     flex-shrink: 1;
 }
 
+.nav {
+    display: flex;
+    justify-content: center;
+}
+
 /* media queries for header part*/
+
+/* large screen devices */
+@media (min-width: 2000px) {
+    .header-entries {
+        font-size: 20px;
+    }
+}
+
+/*
+    For large screen devices
+    Let header entry width grow together with screen width.
+*/
+@media (min-width: 1617px) {
+    #header {
+        width: 90vw;
+    }
+    .header-entries {
+        flex: 1;
+        display: flex;
+    }
+    .nav {
+        flex: 1;
+        justify-items: stretch;
+    }
+    .header-entry {
+        flex-basis: fit-content;
+        flex-grow: 1;
+        text-align: center;
+    }
+}
 
 /* mobile devices */
 @media (max-width: 768px) {
@@ -86,7 +122,6 @@
 /* carousel part begin */
 .carousel {
     flex: 1;
-    height: 400px;
 }
 
 .carousel .carousel-indicators li {
@@ -100,7 +135,15 @@
 .carousel .carousel-control-prev, .carousel-control-next{
     filter: invert(100%);
 }
-/* carousel part begin */
+
+/* media queries for carousel part*/
+@media (min-width: 1617px) {
+    .carousel {
+        width: 90vw;
+    }
+}
+
+/* carousel part end */
 
 /* main part begin */
 #main-body {
@@ -178,6 +221,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
     width: 45%;
     font-size: 14px;
 }
@@ -233,13 +277,15 @@
     display: flex;
     width: 55%;
     align-self: stretch;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-shrink: 1;
 }
 
 #sidebox-address .address-map-img {
     width: 100%;
+    max-width: 300px;
+    height: auto;
 }
 
 /* sidebox hours */
@@ -258,10 +304,14 @@
 #sidebox-hours .hours-department {
     display: flex;
     flex-direction: column;
-    align-self: stretch;
     justify-content: center;
     align-items: center;
-    flex: 1;
+}
+
+@media (max-width: 1024px) {
+    #sidebox-hours .hours-department {
+        align-self: stretch;
+    }
 }
 
 #sidebox-hours .hours-detail {
@@ -295,7 +345,7 @@
     align-self: stretch;
 
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: center;
 }
 
@@ -430,11 +480,6 @@
     #sidebox-hours .datepicker {
         justify-content: flex-start;
     }
-
-    #sidebox-address .address-map-img {
-        max-width: 300px;
-        height: auto;
-    }
 }
 
 /* mobile devices */
@@ -448,7 +493,7 @@
     }
 
     #sidebox-contact .media {
-        padding-left: 0px;
+        padding-left: 0;
     }
 
     #sidebox-address .address-text {
@@ -457,7 +502,7 @@
 
     #sidebox-hours .hours-detail {
         padding-top: 20px;
-        padding-bottom: 0px;
+        padding-bottom: 0;
     }
 
     .section-main {
