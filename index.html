@@ -140,13 +140,6 @@
           <div class="section-main">
             <!-- show hours information according to the date of interactive calendar and department chosen -->
             <div class="hours-text">
-              <!-- a select component; it is used to choose department of clinic -->
-              <div class="hours-department">
-                <select class="select" id="hours-department-select">
-                  <option value="dog">Medical Center</option>
-                  <option value="cat">Laser Skincare</option>
-                </select>
-              </div>
               <!-- show detailed hours information -->
               <div class="hours-detail">
                 <div class="hours-item">
@@ -166,13 +159,22 @@
                 </div>
               </div>
             </div>
-            <!--
-              interactive calendar: allows user to pick a specific date.
-              default value is set to 02/25/2024 when webpage is without js code (interactions)
-             -->
-            <div class="hours-calendar">
-              <!--Using open source component here: https://github.com/uxsolutions/bootstrap-datepicker-->
-              <div class="datepicker" data-provide="datepicker-inline" data-date="02/25/2024">
+            <div class="hours-condition-picker">
+            <!-- a select component; it is used to choose department of clinic -->
+              <div class="hours-department">
+                <select class="select" id="hours-department-select">
+                  <option value="medical">Medical Center</option>
+                  <option value="skincare">Laser Skincare</option>
+                </select>
+              </div>
+              <!--
+                interactive calendar: allows user to pick a specific date.
+                default value is set to 02/25/2024 when webpage is without js code (interactions)
+               -->
+              <div class="hours-calendar">
+                <!--Using open source component here: https://github.com/uxsolutions/bootstrap-datepicker-->
+                <div class="datepicker" data-provide="datepicker-inline" data-date="02/25/2024">
+                </div>
               </div>
             </div>
           </div>
