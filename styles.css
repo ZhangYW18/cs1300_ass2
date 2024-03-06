@@ -5,6 +5,8 @@
     --theme-normal: #FFB1B1;
     --theme-dark: #FF0205;
     --footer-color: #182F82;
+    --link-color: #0000FF;
+    --hovered-link-color: #00008F;
 
     /* font-weights */
     --font-weight-regular: 400;
@@ -46,30 +48,6 @@
     font-weight: var(--font-weight-bold);
     line-height: normal;
     flex-shrink: 1;
-}
-
-/* cosmetics+ dropdown menu */
-.dropdown .cosmetics-dropdown-content {
-    display: none;
-    position: absolute;
-    width: 100%;
-}
-
-.dropdown:hover .cosmetics-dropdown-content {
-    display: block;
-    background: var(--theme-normal);
-    z-index: 100;
-}
-
-.cosmetics-dropdown-content a {
-    display: block;
-    border: 1px solid black;
-    text-align: center;
-    color: #0000FF;
-}
-
-.cosmetics-dropdown-content a:hover {
-    color: purple;
 }
 
 .nav {
@@ -139,8 +117,34 @@
 }
 
 .nav-link:hover {
-    color: #2647F5;
+    color: var(--link-color);
 }
+
+/* cosmetics+ dropdown menu */
+.dropdown .cosmetics-dropdown-content {
+    display: none;
+    position: absolute;
+    width: 100%;
+}
+
+.dropdown:hover .cosmetics-dropdown-content {
+    display: block;
+    background: var(--theme-normal);
+    z-index: 100;
+}
+
+.cosmetics-dropdown-content a {
+    display: block;
+    border: 1px solid black;
+    text-align: center;
+    color: black;
+}
+
+.cosmetics-dropdown-content a:hover {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
 /* header part end */
 
 /* carousel part begin */
@@ -182,7 +186,7 @@
 }
 
 #main-body .media-name:hover, .more-link-text:hover {
-    color: purple;
+    color: var(--hovered-link-color);
     text-decoration: underline;
 }
 
